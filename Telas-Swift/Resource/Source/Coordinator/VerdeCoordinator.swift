@@ -29,9 +29,7 @@ class VerdeCoordinator : Coordinator{
     }
     
     func gotoAzul(){
-        //self.navigationController.popViewController(animated: true)
-        let coordinator_azul = AzulCoordinator(navigationController: navigationController)
-        coordinator_azul.start()
+        self.navigationController.popToRootViewController(animated: true)
     }
     
     func gotoVermelho(){
